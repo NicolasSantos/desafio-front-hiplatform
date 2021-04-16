@@ -1,0 +1,26 @@
+.checkbox-wrapper {
+    width: 100%;
+    padding-right: 10px;
+    cursor: pointer;
+    
+    &__checkbox-container {
+        width: 100%;
+        padding: 15px 0 15px 0;
+        position: relative;
+
+        .name {
+            padding-left: 40px;
+        }
+    }
+
+    .teste {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        padding-right: 15px;
+
+        &:hover {
+            background-color: #f5f5f5;
+        }
+    }
+}
