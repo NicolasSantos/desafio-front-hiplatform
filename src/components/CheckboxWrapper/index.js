@@ -89,7 +89,7 @@ const CheckboxWrapper = forwardRef((props, ref) => {
         <div className="checkbox-wrapper" style={{width: `calc(100% - ${10}px)`, marginLeft: `${10}px`}}>
             <div className="wrapper-content">
                 <div className="checkbox-wrapper__checkbox-container" onClick={handleChange}>
-                    <Checkbox checked={itemData.checked || false} onChange={handleChange}/>
+                    <Checkbox checked={itemData.checked || false} onChange={handleChange} isPartial={isPartial}/>
                     <span className="name">{props.data.name}</span>
                 </div>
                 {

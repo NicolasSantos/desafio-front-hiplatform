@@ -32,7 +32,14 @@ input:checked ~ .checkmark:after {
     display: block;
 }
 
-.checkmark:after {
+.checkmark.is-partial:after {
+    left: 6px;
+    top: 8px;
+    width: 8px;
+    border-bottom: 3px solid white;
+}
+
+.checkmark.is-default:after {
     left: 7px;
     top: 5px;
     width: 3px;

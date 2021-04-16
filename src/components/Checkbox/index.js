@@ -9,7 +9,7 @@ const Checkbox = props => {
                 checked={props.checked}
                 onChange={() => props.handleChange} 
             />
-            <span className="checkmark"></span>
+            <span className={"checkmark " + (props.isPartial ? "is-partial" : "is-default")}></span>
         </>
     );
 }
@@ -18,5 +18,6 @@ export default Checkbox;
 
 Checkbox.propTypes = {
     checked: PropTypes.bool.isRequired,
-    onChange: PropTypes.func.isRequired
+    onChange: PropTypes.func.isRequired,
+    isPartial: PropTypes.bool
 };
